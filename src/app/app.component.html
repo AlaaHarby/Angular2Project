@@ -1,4 +1,20 @@
-<h1>
-  {{title}}
-</h1>
-<router-outlet></router-outlet>
+<header>
+	<button (click)="toggleSidebar()">toggle</button>
+	<h1 class="inline">{{title}}</h1>
+</header>
+<body>
+<ng-sidebar-container>
+      <!-- A sidebar -->
+    <ng-sidebar [(opened)]="opened" closeOnClickOutside=true position='left'>
+	    <aside role="complementary" class="sidebar">
+	        <ul>
+	        <li> <a routerLink='/'> List of Contacts</a></li>
+	        <li> <a routerLink='/new-contact'>Add new Contact</a></li>
+	        </ul>
+	    </aside>
+    </ng-sidebar>
+
+
+	<router-outlet></router-outlet>
+</ng-sidebar-container>
+</body>

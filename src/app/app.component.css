@@ -1,0 +1,35 @@
+.sidebar {
+	background-color: #E3E3E3;
+	min-width: 200px;
+}
+
+aside {
+	padding: 10px;
+	height: 100%;
+}
+
+ng-sidebar-container {
+    box-sizing: border-box;
+    display: block;
+    position: static;
+   	padding: 20px;
+}
+
+header {
+	padding: 15px;
+	background-color: #0078D7;
+	box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+}
+.inline {
+	display: inline;
+	color: white;
+}	
+
+li {
+	display: list-item;
+}
+
+ul {
+	list-style-type: none;
+	padding: 0px;
+}

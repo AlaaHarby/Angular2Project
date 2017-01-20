@@ -1,0 +1,11 @@
+<label class="c-label" for="required">Name</label>
+<input id="name" class="c-text-field" type="text" name="name" required [(ngModel)] = "contact.name">
+<span>{{contact.name}}</span>
+
+<label class="c-label" for="required">Phone</label>
+<input id="phone" class="c-text-field" type="text" name="phone" required [(ngModel)] = "contact.phone">
+
+<label class="c-label" for="required">Email</label>
+<input id="email" class="c-text-field" type="text" name="email" required [(ngModel)] = "contact.email">
+
+<button name="button" class="c-button" type="submit" (click)="onSubmit()">Submit</button>
