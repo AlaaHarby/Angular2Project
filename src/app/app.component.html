@@ -1,9 +1,10 @@
+<html >
 <header>
 	<button (click)="toggleSidebar()">toggle</button>
 	<h1 class="inline">{{title}}</h1>
 </header>
 <body>
-<ng-sidebar-container>
+<ng-sidebar-container (swipeleft) ="opened=false" (swiperight)="opened=true">
       <!-- A sidebar -->
     <ng-sidebar [(opened)]="opened" closeOnClickOutside=true position='left'>
 	    <aside role="complementary" class="sidebar">
@@ -18,3 +19,4 @@
 	<router-outlet></router-outlet>
 </ng-sidebar-container>
 </body>
+</html>

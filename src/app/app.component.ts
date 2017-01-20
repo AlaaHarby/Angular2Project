@@ -9,13 +9,13 @@ import { RouterModule } from '@angular/router';
 
 export class AppComponent {
 	title : string = "Contacts";
-  	opened: boolean = false;
+  opened: boolean = false;
 
-  	constructor() {}
+  constructor() {}
 
-  	private toggleSidebar() {
-    	this.opened = !this.opened;
-  	}
+  private toggleSidebar() {
+   	this.opened = !this.opened;
+  }
 
   }
 
